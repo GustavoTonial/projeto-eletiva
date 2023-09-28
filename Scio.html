@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="thumbnail-do-site.jpg">
+    <meta property="og:title" content="Scio">
+    <meta property="og:description" content="Amplie sua mente">
+    <title>Scio - Amplie sua mente</title>
+    <link rel="icon" href="oie_transparent.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="oie_transparent.jpg">
+    <link rel="stylesheet" type="text/css" href="vitinho link css do arquivo.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="content">
+                <h2>Gerenciar</h2>
+                <button onclick="abrirPopup()">Criar Pasta</button>
+                <button onclick="abrirFlashcardPopup()">Criar Flashcard</button>
+                <button onclick="exibirFlashcardsParaRevisao()">Flashcards para revisão</button>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="popup" id="createFolderPopup">
+                <div class="popup-content">
+                    <span class="close" onclick="fecharPopup()">&times;</span>
+                    <input type="text" id="nomePasta" placeholder="Nome da Pasta">
+                    <button onclick="criarNovaPasta()">Criar Pasta</button>
+                </div>
+            </div>
+
+            <div class="popup" id="createFlashcardPopup">
+                <div class="popup-content">
+                    <span class="close" onclick="fecharPopup()">&times;</span>
+                    <input type="text" id="perguntaFlashcard" placeholder="Pergunta">
+                    <input type="text" id="respostaFlashcard" placeholder="Resposta">
+                    <input type="number" id="diasParaRevisao" placeholder="Dias para revisão">
+                    <select id="seletorPasta">
+                        <!-- Selecionando em qual pasta vai ser colocado o flashcard -->
+                    </select>
+                    <button onclick="criarNovoFlashcardComDias()">Criar Flashcard com Dias</button>
+                </div>
+            </div>
+
+            <!-- Pop-up para exibir flashcards -->
+            <div class="popup" id="flashcardsPopup">
+                <div class="popup-content">
+                    <span class="close" onclick="fecharPopup()">&times;</span>
+                    <div id="flashcardsPopupContent">
+                        <!-- Conteúdo dos flashcards será adicionado aqui -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="pastasContainer" class="pastas-container">
+                <!-- Pastas criadas serão listadas aqui -->
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="vitinho javascript.js"></script>
+</body>
+</html>

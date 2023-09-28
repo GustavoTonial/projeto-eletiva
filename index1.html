@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+    <script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyBOoqAl3kaYLYLSZTaZwLiadFK2qHI9sMg",
+        authDomain: "login-site-172ff.firebaseapp.com",
+        databaseURL: "https://login-site-172ff-default-rtdb.firebaseio.com",
+        projectId: "login-site-172ff",
+        storageBucket: "login-site-172ff.appspot.com",
+        messagingSenderId: "356203188836",
+        appId: "1:356203188836:web:cc7ee5a6fd2ed0952a4571",
+        measurementId: "G-4PBP243JX7"
+      };
+      firebase.initializeApp(firebaseConfig);
+      </script>
+
+</head>
+<body>
+    <div class = "main-Login">
+        <div class = "left-Login">
+            <h1>Faça seu cadastro<br>E de um start nas suas revisões </h1>
+            <img src = "sca.png" class ="left-img">
+        </div>
+        <div class = "right-Login">
+            <div class ="card-login" >
+                <h1>CADASTRO</h1>
+              <div class = "textfield">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email"required>
+              </div>  
+              <div class = "textfield">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="Senha"required>
+              </div>  
+              <a href ="Scio.html">
+                <Button class="btn-login ">Cadastrar-se</Button> 
+              </a>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
